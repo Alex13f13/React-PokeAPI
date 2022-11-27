@@ -1,3 +1,4 @@
+import { store } from "../ReduxToolkit/store";
 import en from "./english.json";
 import es from "./spanish.json";
 
@@ -19,7 +20,8 @@ export const areTranslationsCorrect = () => {
 }
 
 //Idioma de la aplicación, con English como valor por defecto
-export const lang = (language?: string) => {
+export const lang = () => {
+  const language = store.getState().globalState.currentLanguage;
   const languageText = options.find((opt) => opt.key === language);
   return languageText ? languageText.languages : en;
 };
