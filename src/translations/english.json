@@ -1,4 +1,5 @@
 {
   "MessageHello": "Hello",
-  "MessageHowAreYou": "How are you?"
+  "MessageHowAreYou": "How are you?",
+  "MessageNew": "This is a new message"
 }

@@ -1,4 +1,5 @@
 {
   "MessageHello": "Hola",
-  "MessageHowAreYou": "¿Cómo estás?"
+  "MessageHowAreYou": "¿Cómo estás?",
+  "MessageNew": "Esto es un mensaje nuevo"
 }
