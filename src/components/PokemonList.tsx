@@ -7,7 +7,6 @@ export default function PokemonList() {
 
   useEffect(() => {
     getPokemonListAsync(20).then((res) => {
-      console.log(res);
       setPokemonList(res)
     }).catch((err) => console.log(err))
   }, [])
