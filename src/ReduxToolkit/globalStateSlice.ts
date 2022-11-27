@@ -12,9 +12,12 @@ export const globalState = createSlice({
     setCurrentLanguage: (state, action: PayloadAction<any>) => {
       state.currentLanguage = action.payload;
     },
+    setSearchedText: (state, action: PayloadAction<string>) => {
+      state.searchedText = action.payload;
+    },
   },
 });
 
-export const { setCurrentLanguage } = globalState.actions;
+export const { setCurrentLanguage, setSearchedText } = globalState.actions;
 
 export default globalState.reducer;

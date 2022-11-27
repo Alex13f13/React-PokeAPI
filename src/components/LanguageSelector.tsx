@@ -1,4 +1,4 @@
-import { areTranslationsCorrect } from '../translations/language'
+import { areTranslationsCorrect, lang } from '../translations/language'
 import { useDispatch } from 'react-redux'
 import { setCurrentLanguage } from '../ReduxToolkit/globalStateSlice';
 
@@ -13,8 +13,8 @@ export default function LanguageSelector() {
   return (
     <>
       {areTranslationsCorrect() && <div>
-        <button onClick={() => changeLanguage("es")}>ES</button>
-        <button onClick={() => changeLanguage("en")}>EN</button>
+        <button onClick={() => changeLanguage("es")}>{lang().ES}</button>
+        <button onClick={() => changeLanguage("en")}>{lang().EN}</button>
       </div>}
     </>
   )

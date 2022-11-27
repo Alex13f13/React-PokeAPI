@@ -17,14 +17,13 @@ function App() {
   }
 
   return (
-    //Título de la página
-    //Componente: Barra de busqueda por palabras
     //Filtros
     <div>
-      <h1>{lang().MessageHello}</h1>
+      <h1>{lang().Title}</h1>
+      <h2>{lang().Subtitle}</h2>
 
-      <LanguageSelector />
       <SearchBar />
+      <LanguageSelector />
       <PokemonList />
 
     </div>

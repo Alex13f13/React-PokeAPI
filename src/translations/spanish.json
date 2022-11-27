@@ -1,5 +1,7 @@
 {
-  "MessageHello": "Hola",
-  "MessageHowAreYou": "¿Cómo estás?",
+  "Title": "Lista de Pokemon",
+  "Subtitle": "¿Que pokemon estas buscando?",
+  "ES": "Español",
+  "EN": "Inglés",
   "MessageNew": "Esto es un mensaje nuevo"
 }
