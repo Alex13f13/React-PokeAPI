@@ -1,26 +1,25 @@
 import { useEffect, useState } from 'react'
 import { getPokemonListAsync } from '../api/pokeApi';
+import PokemonCard from './PokemonCard';
 
 export default function PokemonList() {
   const [pokemonList, setPokemonList] = useState([])
 
   useEffect(() => {
-    // Get the list of pokemon
     getPokemonListAsync(20).then((res) => {
       console.log(res);
       setPokemonList(res)
     }).catch((err) => console.log(err))
   }, [])
 
-
   return (
     <>
       {pokemonList.length > 0 ?
-        <ul>
+        <div>
           {pokemonList.map((pokemon: any) => (
-            <li key={pokemon.name}>{pokemon.name}</li>
+            <PokemonCard key={pokemon.name} name={pokemon.name} url={pokemon.url} />
           ))}
-        </ul>
+        </div>
         : <p>Loading...</p>}
     </>
   )
