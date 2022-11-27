@@ -1,13 +1,16 @@
-## React Proyect using Typescript + Vite + Vitest and the PokeAPI
+## React Proyect with PokeAPI
+### Using Typescript + Redux Toolkit + Vite + Vitest + SWR
+
+## First exercise planning
 ![image](https://user-images.githubusercontent.com/46814661/204136597-8dfae4c1-06e5-4587-8593-923af84a23aa.png)
 
-## Problema 1 - React
+## Problem 1 - React
 - API calls -> src/api/pokeApi
 - List fist 20 Pokemons -> src/componets/PokemonList
 - Case-insensitive search bar -> src/componets/PokemonList
 - Alphabetical order button -> src/componets/AlphabetButton
 
-## Problema 2 - Algoritmia
+## Problem 2 - Algoritmia
 Our goal will be to develop a function that checks that all the keys in the file
 english.json file are in the spanish.json file and vice versa.
 
