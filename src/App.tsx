@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { getPokemonAsync } from './api/pokeApi'
 import LanguageSelector from './components/LanguageSelector'
 import PokemonList from './components/PokemonList'
 import { lang } from './translations/language'
