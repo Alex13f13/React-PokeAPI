@@ -1,6 +1,6 @@
-import { areTranslationsCorrect, lang } from '../translations/language'
+import { areTranslationsCorrect, lang } from '../../translations/language'
 import { useDispatch } from 'react-redux'
-import { setCurrentLanguage } from '../ReduxToolkit/globalStateSlice';
+import { setCurrentLanguage } from '../../ReduxToolkit/globalStateSlice';
 
 export default function LanguageSelector() {
   //Hacer es estado global para que accedan a el todos los componentes

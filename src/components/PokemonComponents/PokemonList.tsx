@@ -1,15 +1,11 @@
-import { useEffect, useState } from 'react'
-import { getPokemonListAsync } from '../api/pokeApi';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../ReduxToolkit/store';
+import { lang } from '../../translations/language';
 import PokemonCard from './PokemonCard';
 
 export default function PokemonList() {
-  const [pokemonList, setPokemonList] = useState([])
-
-  useEffect(() => {
-    getPokemonListAsync(20).then((res) => {
-      setPokemonList(res)
-    }).catch((err) => console.log(err))
-  }, [])
+  const { globalState } = useSelector((state: RootState) => state);
+  const { pokemonList } = globalState;
 
   return (
     <>
@@ -19,7 +15,7 @@ export default function PokemonList() {
             <PokemonCard key={pokemon.name} name={pokemon.name} url={pokemon.url} />
           ))}
         </div>
-        : <p>Loading...</p>}
+        : <p>{lang().No_Results}</p>}
     </>
   )
 }

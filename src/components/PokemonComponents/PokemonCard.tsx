@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { getPokemonAsync } from '../api/pokeApi';
-import { IPokemonCard } from '../models/IPokemonCard'
+import { getPokemonAsync } from '../../api/pokeApi';
+import { IPokemon } from '../../models/IPokemon'
 
-export default function PokemonCard({ name }: IPokemonCard) {
+export default function PokemonCard({ name }: IPokemon) {
   const [image, setImage] = useState('')
 
   useEffect(() => {

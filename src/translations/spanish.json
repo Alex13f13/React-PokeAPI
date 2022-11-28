@@ -3,5 +3,7 @@
   "Subtitle": "¿Que pokemon estas buscando?",
   "ES": "Español",
   "EN": "Inglés",
-  "MessageNew": "Esto es un mensaje nuevo"
+  "No_Results": "No se encontraron resultados",
+  "Alph_Order": "Ordenar Alfabeticamente",
+  "MessageNew": "Esto es un mensaje nuevo, sirve para borrar"
 }

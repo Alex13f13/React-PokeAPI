@@ -1,11 +1,13 @@
+import { IPokemon } from "./IPokemon";
+
 export interface IGlobalState {
   currentLanguage: string;
-  searchedText: string;
+  pokemonList: IPokemon[];
 }
 
 export const emptyGlobalState = (): IGlobalState => {
   return {
     currentLanguage: "en",
-    searchedText: "",
+    pokemonList: [],
   };
 };
