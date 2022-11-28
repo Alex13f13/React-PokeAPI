@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux'
 import { setCurrentLanguage } from '../../ReduxToolkit/globalStateSlice';
 
 export default function LanguageSelector() {
-  //Hacer es estado global para que accedan a el todos los componentes
   const dispatch = useDispatch();
 
   const changeLanguage = (lang: string) => {

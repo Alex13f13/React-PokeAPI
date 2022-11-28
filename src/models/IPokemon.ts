@@ -1,4 +1,4 @@
 export interface IPokemon {
   name: string;
-  url: string;
+  url?: string;
 }

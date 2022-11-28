@@ -20,3 +20,8 @@ For the execution of the logic we use the LanguageSelector component that checks
 - Checking translations -> src/componets/LanguageSelector
 
 If any problem is found, this component is not deployed and throws the error to the console.
+
+
+## To Do:
+[ ] Implementar el SWR a las llamadas a la API
+[ ] Implementar Tailwind css y meter un poco de estilos a la página
