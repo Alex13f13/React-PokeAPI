@@ -7,7 +7,7 @@
 ## Problem 1 - React
 - API calls -> src/api/pokeApi
 - List fist 20 Pokemons -> src/componets/PokemonList
-- Case-insensitive search bar -> src/componets/PokemonList
+- Case-insensitive search bar -> src/componets/SearchBar
 - Alphabetical order button -> src/componets/AlphabetButton
 
 ## Problem 2 - Algoritmia
